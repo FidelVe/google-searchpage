@@ -174,7 +174,7 @@ background-size: 25px 25px;
     border-radius: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-right: 25px;
+    margin-right: 5px;
 }
 .google-notif:hover {
     background-image: url("../images/bells.png");
@@ -189,12 +189,15 @@ background-size: 25px 25px;
     color: white;
     font-weight: bold;
     margin-top: 10px;
-    margin-right: 5px;
+    margin-left: 0px;
+    margin-right: 25px;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 15px;
     padding-right: 15px;
-    
+}
+#button-login:focus {
+    outline: none;
 }
 #button-login:active {
     background-color: blue;
@@ -242,6 +245,9 @@ background-size: 25px 25px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
+}
+#tool-button:focus {
+    outline: none;
 }
 #tool-button:active {
     background-color: lightgray;
