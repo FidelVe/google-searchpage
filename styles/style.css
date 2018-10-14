@@ -1,159 +1,81 @@
 /* CSS style for the page */
-/*
-.body {
-    margin: 0px!important;
-    padding: 0px!important;
+body {
+    font-family: arial, sans-serif;
+    
 }
-*/
+.header {
+    width: 102%;
+    position: relative;
+    top: -34px;
+    left: -8px;
+    height: auto;
+    padding-top: 25px;
+}
 .top-bar {
-/*    border-style: dotted;*/
-    height: 30px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 20px
-/*    margin: 0px 0px;*/
-}
-.top-bar a{
-    color: black;
-}
-.top-bar a:hover{
-    text-decoration: underline;
-}
-.box {
-    height: 10%;
-    width: 60px;
-    font-family: arial, sans-serif;
+    height: 50px;
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-bottom-color: lightgray;
+    background-color: #f2f2f2;
     color: #f5f5f5;
-    font-size: 13px;
-
-/*    border-style: dashed;*/
-/*    float: right;*/
-}
-.box a {
-    text-decoration: none;
-}
-.box p{
-    
-/*    padding: 0;*/
-    width: 100px;
-    color: gray;
-    font-size: 15px;
-    margin-top: 0px;
-    
-}
-.f-left {
-    float: left;
-    margin-left: 20px;
-    padding: 15px;
-}
-.f-right {
-    float: right;
-    padding: 15px;
-    margin-right: 1px;
-}
-.f-right-t {
-    height: 100% !important;
-    float: right;
-    margin-right: 1px;
-}
-.main-center {
-    /* border-style: dotted; */
-    /* position: relative; */
-    width: 484px;
-    height: 550px;
-/*    padding: none;*/
-    margin: 0 auto;
-    font-family: arial, sans-serif;
-    border-color: blue;
-}
-/*
-.main-center * {
-     border-style: dotted; 
-}
-*/
-.main-center p {
-    padding: 0;
-    margin: 0 auto;
-    width: 185px;
-    font-size: small;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    padding-left:15px;
 }
 #google-logo {
     background-image: url("../images/google-logo.png");
     background-repeat: no-repeat;
-    /* border-style: dotted; */
-    width: 272px;
-    height: 92px;
-    margin: 0 auto;
-    margin-bottom: 27px;
-    margin-top: 198px;
-}
-.bell {
-    border-style: solid;
-    border-color: #f2f2f2;
-    background-color: #f2f2f2;
-    position: relative;
-    top: -11px;
-    background-image: url("../images/bells2.png");
+    background-size: 120px 40px;
     background-position: center;
-    background-repeat: no-repeat;
-    width: 19px;
-    height: 22px;
-    padding: 5px;
-    border-radius: 100%;
-    margin: 0 auto;
-}
-.bell:hover {
-    background-image: url("../images/bells.png");
-    background-color: lightgray;
-    border-color: lightgray;
-     
+    width: 120px;
+    height: 40px;
+    border-left: 12px;
+    float: left;
+    padding: 3px 0;
+/*    left: 12px;*/
+/*
+    position: relative;
+    top: 0;
+    left: 0;
+*/
 }
 #search-form {
-    width: 100%;
-    height: 46px;
+    width: 640px;
+    height: 45px;
     box-shadow: 1px 1px 5px grey;
-    margin-bottom: 10px;
+    margin-left: 15px;
+    float: left;
+    background-color: white;
 }
 #search-form:hover {
    box-shadow: 3px 3px 7px grey;
 }
-/*
-#search-form:active {
-    border: none;
-    border-color: white;
-}
-*/
 #input-2 {
-    padding: 10px;
+    padding: 9px;
     height: 26px;
-    width: 84%;
+    width: 522px;
     float: left;
+    font-size: 17px;
     /* border value to 0 to have no visible border the style is being given by the box-shadow attribute in #search-form */
     border: 0; 
 }
-/*
-#input-2:focus {
-    border: none;
-}
-*/
 #mic-img {
     background-image: url("../images/mic.png");
     background-repeat: no-repeat;
-    background-size: 20px 20px;
-    background-position: 10px;
+    background-size: 28px 28px;
+    background-position: center;
 /*    border-style: dotted;*/
-    padding: 5px 5px;
-    margin: 5px 5px;
+/*    padding: ;*/
+    margin: 8px 8px;
     width: 30px;
     height: 30px;
-    float: right; 
+    float: right;
 }
 #mic-img .tooltiptext {
     visibility: hidden;
     font-size: 12px;
     font-weight: bold;
+/*    font-family: arial, sans-serif;*/
     background-color: black;
     color: #fff;
     text-align: center;
@@ -171,74 +93,146 @@
 #mic-img:hover .tooltiptext {
     visibility: visible;
 }
+#loupe-img {
+background-image: url("../images/loupe.png");
+    background-repeat: no-repeat;
+background-size: 25px 25px;
+    background-position: center;
+/*    border-style: dotted;*/
+/*    padding: ;*/
+    margin: 8px 8px;
+    width: 30px;
+    height: 30px;
+    float: right;
+}
 
-.button-box {
-    width: 337px;
-    margin: 0 auto;
-    border-color: yellow;
-    padding-top: 28px;
-    padding-bottom: 23px;
-    /* border-color: red; */
-}
-.buttom {
+
+.google-notif {
+    border-style: solid;
+    border-color: #f2f2f2;
     background-color: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    color: #757575;
-    font-size: 13px;
-    font-weight: bold;
-    text-align: center;
-    min-width: 54px;
-    height: 36px;
-    padding: 0 16px;
-    margin: 0 4px;
+    background-image: url("../images/bells2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 22px;
+    padding: 5px;
+    border-radius: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 25px;
+    float: right;
 }
-.buttom:hover {
-    border: 1px solid lightgray;
-    color: black;
+.google-notif:hover {
+    background-image: url("../images/bells.png");
+    background-color: lightgray;
+    border-color: lightgray;
+     
+}
+
+.google-app {
     
+}
+
+.main-body {
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    border-style: solid;
+}
+.result-preview {
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    border-style: solid;
+    
+}
+.collapse-ask {
+    height: 30px;
+    width: auto;
+    margin: 0 auto;
+    border-style: solid;
+}
+.result-each {
+    height: 20px;
+    width: auto;
+    margin: 0 auto;
+    border-style: solid;
+}
+
+.related-search {
+    height: 20px;
+    width: auto;
+    margin: 0 auto;
+    border-style: solid;
+}
+.related-search-gallery {
+    height: 20px;
+    width: auto;
+    margin: 0 auto;
+    border-style: solid;
+}
+.related-search-table {
+    height: 20px;
+    width: auto;
+    margin: 0 auto;
+    border-style: solid;
+}
+.page-count {
+    height: 20px;
+    width: auto;
+    margin: 0 auto;
+    border-style: solid;
 }
 .footer {
     width: 100%;
-    position:absolute;
+    position: absolute;
     bottom: 0;
     left: 0;
     height: auto;
-   }
-/*
-#b-style {
 }
-*/
 
 .bottom-bar {
-/*    border-style: dotted;*/
     height: 41px;
-/*    margin: 0px 0px;*/
     border-bottom: solid;
     border-bottom-width: thin;
     border-bottom-color: lightgray;
     background-color: #f2f2f2;
-    color: #f5f5f5;
-    padding-left: 0px;
+    padding-left: 35px;
+    padding-right: 35px;
+/*    font-family: arial, sans-serif;*/
+    color: gray;
 }
+
 .bottom-bar a {
     color: gray;
-/*    text-decoration: none;*/
+    text-decoration: none;
+    font-size: 13px;
+    padding-top: 0px;
+    margin-top: 0px;
 }
+
 .bottom-bar a:hover {
     text-decoration: underline;
 }
 
-
-/*
-#input-1 {
-    background-image: url("../images/mic.png");
-    background-repeat: no-repeat;
-    background-position: 450px;
-    background-size: 20px 20px;
-    padding: 10px;
-    height: 30px;
-    width: 96%;
-     border value to 0 to have no visible border the style is being given by the box-shadow attribute in #search-form 
-    border: 0; 
+.bottom-bar p {
+    font-size: 15px;
+    margin: 0px;
 }
-*/
+
+.f-left {
+    float: left;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+.f-right {
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
