@@ -1,8 +1,55 @@
 /* CSS style for the page */
+/*=======================overall elements=======================*/
 body {
     font-family: arial, sans-serif;
     
 }
+.bar-style {
+    min-width: 600px; /*delete this and leave the value below*/
+    /*    min-width: 1020px;*/
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-bottom-color: lightgray;
+    background-color: #f2f2f2;
+    color: gray;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 150px;
+    padding-right: 0px;
+    margin: 0px;
+}
+.bar-style a {
+    color: gray;
+    text-decoration: none;
+    font-size: 13px;
+    padding-top: 0px;
+    margin-top: 0px;
+    
+}
+.bar-style a:hover {
+    text-decoration: underline;
+}
+.bar-style p{
+    margin: 0px;
+}
+.f-left {
+    float: left;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin: 0px;
+}
+.f-right {
+    float: right;
+/*
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+*/
+}
+/*=======================top section===========================*/
 .header {
     width: 102%;
     position: relative;
@@ -11,57 +58,21 @@ body {
     height: auto;
     padding-top: 25px;
 }
-.bar-style {
+#bar-top-1 {
     height: 50px;
-    min-width: 1020px;
-    border-bottom: solid;
-    border-bottom-width: thin;
-    border-bottom-color: lightgray;
-    background-color: #f2f2f2;
-    color: gray;
-    font-size: 15px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 150px;
-    padding-right: 0px;
-    margin: 0px;
+    padding-top: 15px;
+/*    border-style: dotted;*/
 }
+#bar-top-2 {
+    width: 640px;
+/*    border-style: dotted;*/
+    height: 25px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
 
-.bottom-bar {
-/*    height: 50px;*/
-    border-bottom: solid;
-    border-bottom-width: thin;
-    border-bottom-color: lightgray;
-    background-color: #f2f2f2;
-    color: gray;
-    font-size: 15px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 150px;
-    padding-right: 0px;
-    margin: 0px;
-}
-.top-bar {
-/*    height: 50px;*/
-    border-bottom: solid;
-    border-bottom-width: thin;
-    border-bottom-color: lightgray;
-    background-color: #f2f2f2;
-    color: gray;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left:150px;
-}
-.bar-a-style a {
-    color: gray;
-    text-decoration: none;
-    font-size: 13px;
-    padding-top: 0px;
-    margin-top: 0px;
-    
-}
-.bar-a-style a:hover {
-    text-decoration: underline;
 }
 #google-logo {
     background-image: url("../images/google-logo.png");
@@ -71,8 +82,12 @@ body {
     width: 120px;
     height: 40px;
     border-left: 12px;
+    position: relative;
+    top: 15px;
+    left: 5px;
     float: left;
-    padding: 3px 0;
+    z-index: 2;
+/*    padding: 3px 0;*/
 /*    left: 12px;*/
 /*
     position: relative;
@@ -84,7 +99,7 @@ body {
     width: 640px;
     height: 45px;
     box-shadow: 1px 1px 5px grey;
-    margin-left: 15px;
+    margin-left: 0px;
     float: left;
     background-color: white;
 }
@@ -160,7 +175,6 @@ background-size: 25px 25px;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 25px;
-    float: right;
 }
 .google-notif:hover {
     background-image: url("../images/bells.png");
@@ -169,57 +183,120 @@ background-size: 25px 25px;
      
 }
 .google-app {
+}
+#a-selected {
+    height: 26px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+    border-bottom: solid;
+    border-color: #4885ed;
+}
+#bar-top-2 a {
+    color: #4885ed;
+}
+#a-selected a:hover {
+    text-decoration: none;
+}
+#a-unselected {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
     
 }
+#a-unselected a {
+    color: gray;
+}
+#a-unselected a:hover {
+    color: black;
+    text-decoration: none;
+}
+#tool-button {
+    border: none;
+    background-color: #f2f2f2;
+    color: gray;
+    margin-top: -8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#tool-button:hover {
+    border-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+    border-radius: 5%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+/*=======================middle section=======================*/
 .main-body {
     height: auto;
-    width: auto;
-    margin: 0 auto;
+    width: 1020px;
+    padding-left: 150px;
+    margin: 0;
     border-style: solid;
+    border-color: gray;
+    border-width: thin;
 }
 .result-preview {
     height: auto;
     width: auto;
-    margin: 0 auto;
-    border-style: solid;
-    
+ border-style: dotted;
+    border-color: gray;
+    border-width: thin;
 }
 .collapse-ask {
     height: 30px;
     width: auto;
-    margin: 0 auto;
-    border-style: solid;
+ border-style: dotted;
+    border-color: gray;
+    border-width: thin;
 }
 .result-each {
     height: 20px;
     width: auto;
-    margin: 0 auto;
-    border-style: solid;
+ border-style: dotted;
+    border-color: gray;
+    border-width: thin;
 }
 .related-search {
     height: 20px;
     width: auto;
-    margin: 0 auto;
-    border-style: solid;
+ border-style: dotted;
+    border-color: gray;
+    border-width: thin;
 }
 .related-search-gallery {
     height: 20px;
     width: auto;
-    margin: 0 auto;
-    border-style: solid;
+ border-style: dotted;
+    border-color: gray;
+    border-width: thin;
 }
 .related-search-table {
     height: 20px;
     width: auto;
-    margin: 0 auto;
-    border-style: solid;
+ border-style: dotted;
+    border-color: gray;
+    border-width: thin;
 }
 .page-count {
     height: 20px;
     width: auto;
-    margin: 0 auto;
-    border-style: solid;
+ border-style: dotted;
+    border-color: gray;
+    border-width: thin;
 }
+/*=======================bottom section=======================*/
 .footer {
     width: 100%;
     position: absolute;
@@ -232,31 +309,6 @@ background-size: 25px 25px;
     padding-right: 0px;
     margin: 0px;
 }
-
-
-.bottom-bar p {
-    
-    font-size: 15px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-right-style: solid;
-    border-width: thin;
-    padding-right: 10px;
+#bar-bottom {
+    height: 40px;
 }
-
-.f-left {
-    float: left;
-    height: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    margin: 0px;
-}
-
-.f-right {
-    float: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-}
-

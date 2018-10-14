@@ -7,32 +7,45 @@
 </head>
 
 <body>
+    <a href="#">
+        <div id="google-logo"></div>
+    </a>
     <div class="header">
         <div class="bar-style">
             <!--            On the left Google logo (120x40) and search bar, on the right google apps and google notificacions-->
-            <a href="#"><div id="google-logo"></div></a>
-            <div id="search-form">
-                <form action="#" target="_self" method="GET">
-                    <input id="input-2" type="text" name="search-query" value="build this webpage">
-                    <a href="#"><div id="loupe-img"></div></a>
-                    <a href="#"><div id="mic-img"><span class="tooltiptext">Search by Voice</span></div></a>
-                </form>
+            <div id="bar-top-1">
+                <div id="search-form">
+                    <form action="#" target="_self" method="GET">
+                        <input id="input-2" type="text" name="search-query" value="build this webpage">
+                        <a href="#">
+                            <div id="loupe-img"></div>
+                        </a>
+                        <a href="#">
+                            <div id="mic-img"><span class="tooltiptext">Search by Voice</span></div>
+                        </a>
+                    </form>
+                </div>
+                <div class="google-notif f-right">
+                </div>
+                <div class="google-app f-right">
+                </div>
+              
             </div>
-                <div class="google-notif">
-                </div>
-                <div class="google-app">
-                </div>
-        </div>
-        <div class="bar-style bar-a-style">
-            <!--                nav-bar on the left on the right settings link and tools buttom-->
-            <div class="f-left" id="a-selected"><a href="#">All</a></div>
-            <div class="f-left"><a href="#">Videos</a></div>
-            <div class="f-left"><a href="#">News</a></div>
-            <div class="f-left"><a href="#">Images</a></div>
-            <div class="f-left"><a href="#">Maps</a></div>
-            <div class="f-left"><a href="#">More</a></div>
-            <div class="f-left"><a href="#" id="a-separate">Settings</a></div>
-            <div class="f-left"><a href="#">Tools</a></div>
+            <div id="bar-top-2">
+                <a href="#"><div class="f-left" id="a-selected"><a href="#">All</a></div></a>
+                <div class="f-left" id="a-unselected"><a href="#">Videos</a></div>
+                <div class="f-left" id="a-unselected"><a href="#">News</a></div>
+                <div class="f-left" id="a-unselected"><a href="#">Images</a></div>
+                <div class="f-left" id="a-unselected"><a href="#">Maps</a></div>
+                <div class="f-left" id="a-unselected"><a href="#">More</a></div>
+                <button type="button" class="f-right" id="tool-button">Tools</button>
+<!--                <div class="f-right" id="tool-button">Tools</div>-->
+                <div class="f-right" id="a-unselected"><a href="#">Settings</a></div>
+<!--
+                <div class="f-right"id="tool-buttom"><a href="#">Tools</a></div>
+                <div class="f-right" id="a-unselected"><a href="#">Settings</a></div>
+-->
+            </div>
         </div>
     </div>
     <div class="main-body">
@@ -78,12 +91,12 @@
         </div>
     </div>
     <div class="footer">
-        <div class="bar-style">
+        <div class="bar-style" id="bar-bottom">
             <div class="f-left">
                 <p>Venezuela</p>
             </div>
         </div>
-        <div class="bar-style bar-a-style">
+        <div class="bar-style" id="bar-bottom">
             <div class="f-left"><a href="#">Help</a></div>
             <div class="f-left"><a href="#">Send feedback</a></div>
             <div class="f-left"><a href="#">Privacy</a></div>
