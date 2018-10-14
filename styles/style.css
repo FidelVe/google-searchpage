@@ -182,7 +182,23 @@ background-size: 25px 25px;
     border-color: lightgray;
      
 }
-.google-app {
+#button-login {
+    border: none;
+    border-radius: 5%;
+    background-color: #4885ed;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+#button-login:active {
+    background-color: blue;
+    
 }
 #a-selected {
     height: 26px;
@@ -226,6 +242,9 @@ background-size: 25px 25px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
+}
+#tool-button:active {
+    background-color: lightgray;
 }
 #tool-button:hover {
     border-style: solid;
