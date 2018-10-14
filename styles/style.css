@@ -11,16 +11,57 @@ body {
     height: auto;
     padding-top: 25px;
 }
-.top-bar {
+.bar-style {
     height: 50px;
+    min-width: 1020px;
     border-bottom: solid;
     border-bottom-width: thin;
     border-bottom-color: lightgray;
     background-color: #f2f2f2;
-    color: #f5f5f5;
-    padding-top: 18px;
-    padding-bottom: 15px;
-    padding-left:15px;
+    color: gray;
+    font-size: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 150px;
+    padding-right: 0px;
+    margin: 0px;
+}
+
+.bottom-bar {
+/*    height: 50px;*/
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-bottom-color: lightgray;
+    background-color: #f2f2f2;
+    color: gray;
+    font-size: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 150px;
+    padding-right: 0px;
+    margin: 0px;
+}
+.top-bar {
+/*    height: 50px;*/
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-bottom-color: lightgray;
+    background-color: #f2f2f2;
+    color: gray;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left:150px;
+}
+.bar-a-style a {
+    color: gray;
+    text-decoration: none;
+    font-size: 13px;
+    padding-top: 0px;
+    margin-top: 0px;
+    
+}
+.bar-a-style a:hover {
+    text-decoration: underline;
 }
 #google-logo {
     background-image: url("../images/google-logo.png");
@@ -105,8 +146,6 @@ background-size: 25px 25px;
     height: 30px;
     float: right;
 }
-
-
 .google-notif {
     border-style: solid;
     border-color: #f2f2f2;
@@ -129,11 +168,9 @@ background-size: 25px 25px;
     border-color: lightgray;
      
 }
-
 .google-app {
     
 }
-
 .main-body {
     height: auto;
     width: auto;
@@ -159,7 +196,6 @@ background-size: 25px 25px;
     margin: 0 auto;
     border-style: solid;
 }
-
 .related-search {
     height: 20px;
     width: auto;
@@ -190,35 +226,22 @@ background-size: 25px 25px;
     bottom: 0;
     left: 0;
     height: auto;
-}
-
-.bottom-bar {
-    height: 41px;
-    border-bottom: solid;
-    border-bottom-width: thin;
-    border-bottom-color: lightgray;
-    background-color: #f2f2f2;
-    padding-left: 35px;
-    padding-right: 35px;
-/*    font-family: arial, sans-serif;*/
-    color: gray;
-}
-
-.bottom-bar a {
-    color: gray;
-    text-decoration: none;
-    font-size: 13px;
     padding-top: 0px;
-    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
 }
 
-.bottom-bar a:hover {
-    text-decoration: underline;
-}
 
 .bottom-bar p {
+    
     font-size: 15px;
-    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-right-style: solid;
+    border-width: thin;
+    padding-right: 10px;
 }
 
 .f-left {
@@ -227,6 +250,7 @@ background-size: 25px 25px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 20px;
+    margin: 0px;
 }
 
 .f-right {
