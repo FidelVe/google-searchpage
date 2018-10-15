@@ -5,8 +5,7 @@ body {
     
 }
 .bar-style {
-    min-width: 600px; /*delete this and leave the value below*/
-    /*    min-width: 1020px;*/
+    min-width: 1020px;
     border-bottom: solid;
     border-bottom-width: thin;
     border-bottom-color: lightgray;
@@ -49,6 +48,17 @@ body {
     padding-left: 20px;
 */
 }
+.arrow-down{
+    border: 4px solid transparent;
+    border-top-color: green;
+    display: block;
+    width: 0px;
+    height: 0px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
 /*=======================top section===========================*/
 .header {
     width: 102%;
@@ -61,10 +71,12 @@ body {
 #bar-top-1 {
     height: 50px;
     padding-top: 15px;
+    min-width: 1020px;
 /*    border-style: dotted;*/
 }
 #bar-top-2 {
     width: 640px;
+/*    min-width: px;*/
 /*    border-style: dotted;*/
     height: 25px;
     padding-top: 20px;
@@ -200,7 +212,28 @@ background-size: 25px 25px;
     outline: none;
 }
 #button-login:active {
-    background-color: blue;
+    background-color: dodgerblue;
+    
+}
+.google-app {
+    border-style: solid;
+    border-color: #f2f2f2;
+    background-color: #f2f2f2;
+    background-image: url("../images/app1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 22px;
+    padding: 5px;
+    border-radius: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.google-app:hover {
+    border-color: #f2f2f2;
+    background-color: lightgray;
+    background-image: url("../images/app2.png");
     
 }
 #a-selected {
@@ -213,6 +246,7 @@ background-size: 25px 25px;
     font-weight: bold;
     border-bottom: solid;
     border-color: #4885ed;
+    cursor: pointer;
 }
 #bar-top-2 a {
     color: #4885ed;
@@ -267,11 +301,20 @@ background-size: 25px 25px;
     height: auto;
     width: 1020px;
     padding-left: 150px;
-    margin: 0;
-    border-style: solid;
+/*    padding-top: 0px;*/
+    margin-top: -30px;
+/*    border-style: solid;*/
     border-color: gray;
     border-width: thin;
+    font-size: 13px;
+    color: gray;
+/*    text-align: left;*/
 }
+/*
+.main-body p {
+    width: 600px;
+}
+*/
 .result-preview {
     height: auto;
     width: auto;
@@ -287,11 +330,48 @@ background-size: 25px 25px;
     border-width: thin;
 }
 .result-each {
-    height: 20px;
+    height: auto;
     width: auto;
- border-style: dotted;
+/* border-style: dotted;*/
     border-color: gray;
     border-width: thin;
+}
+.result-title {
+    font-size: 16px;
+    text-decoration: none
+}
+.result-title:hover {
+    text-decoration: underline;
+}
+/*
+.result-each a {
+    display: block;
+    font-size: 16px
+}
+*/
+.result-each p {
+    width: 600px;
+/*    font-size: 13px;*/
+    color: dimgrey;
+}
+.green-link {
+/*    border-style: dotted;*/
+/*    width: 5px;*/
+    color: green;
+    font-size: 14px;
+/*    width: 50%;*/
+    float: left;
+    text-decoration: none;
+}
+/*
+.green-link:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+*/
+.green-link-container {
+/*    border-style: dotted;*/
 }
 .related-search {
     height: 20px;
