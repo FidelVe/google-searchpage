@@ -323,6 +323,10 @@ background-size: 25px 25px;
 .result-preview p {
     font-size: 16px;
 }
+#p-mod2 p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 #preview-style-a {
     color: gray;
     text-decoration: none;
@@ -402,9 +406,31 @@ background-size: 25px 25px;
 }
 .page-count {
     height: auto;
-    width: auto;
+    width: 620px;
     border-color: gray;
     border-width: thin;
+}
+.page-count-in {
+    width: 300px;
+    margin: 0 auto;
+}
+#img-mod1 {
+    float: left;
+    cursor:pointer;
+}
+#link-1 {
+    margin-left: 35px;
+    color: black;
+    text-decoration: none;
+    
+}
+#link-1:hover {
+    cursor:default;
+}
+#link-2 {
+    padding-left: 11px;
+    text-decoration: none;
+    color: #1617a6;
 }
 /*=======================bottom section=======================*/
 .footer {
