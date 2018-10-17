@@ -1,13 +1,13 @@
-# TheOdinProject. google home page (easy) project.
+# TheOdinProject. google home page (hard) project.
 
-The following is my version of the google homepage (easy version) coded from scratch as an assigment for the Web Development 101 course in TheOdinProject.
+The following is my version of the google search page result coded from scratch as an assigment for the Web Development 101 course in TheOdinProject.
 
 The Odin Project's [curriculum](http://www.theodinproject.com/courses/web-development-101/lessons/html-css)
 
 
 ## Steps by step.
 
-* visit google homepage and draw the overall structure on paper to use as a guide.
+* visit google search page result for the query 'build this website' and draw the overall structure on paper to use as a guide.
 * analize the structure of the page to find out how the page is divided and how is needed to be structured.
 * fetch all the images on the page.
 * create structure of the page in html.
@@ -18,7 +18,7 @@ The Odin Project's [curriculum](http://www.theodinproject.com/courses/web-develo
 * Positioning div's.
 * fetching images from the web. 
 * Creating forms.
-*etc
+* etc
 
 ## Author
 
@@ -30,7 +30,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* TheOdinProject
 * README.md file format by [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
